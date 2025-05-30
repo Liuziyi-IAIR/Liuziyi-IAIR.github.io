@@ -145,7 +145,54 @@
             color: #7f8c8d;  /* 颜色 */
             font-size: 0.9em;  /* 字体大小 */
         }
+        /* 工作经历部分样式 */
+        #experience {
+            margin-bottom: 40px;
+        }
         
+        .experience-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .experience-left {
+            flex: 1;
+            min-width: 60%;
+        }
+        
+        .experience-right {
+            text-align: right;
+            color: #666;
+            min-width: 30%;
+        }
+        
+        .experience-item h3 {
+            margin: 0 0 5px 0;
+            font-size: 1.1em;
+            color: #2c3e50;
+        }
+        
+        .experience-item .position {
+            margin: 0;
+            font-style: italic;
+            color: #555;
+            font-size: 0.95em;
+        }
+        
+        /* 响应式设计 */
+        @media (max-width: 600px) {
+            .experience-item {
+                flex-direction: column;
+            }
+            
+            .experience-right {
+                text-align: left;
+                margin-top: 5px;
+            }
+        }
         /* 移动设备响应式样式 */
         @media (max-width: 600px) {
             /* 小屏幕下头部布局改为垂直排列 */
