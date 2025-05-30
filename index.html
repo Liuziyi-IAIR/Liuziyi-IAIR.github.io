@@ -1,6 +1,265 @@
-<p>Hello everyone </p>
+<!-- <p>Hello everyone </p>
 <p>This is Ziyi's personal page </p>
 
 <ul>
   <li> <a href="https://scholar.google.com.hk/citations?user=m2k89xgAAAAJ&hl=zh-CN">Google Scholar</a> </li>
 </ul>
+ -->
+ <!DOCTYPE html>
+<!-- 声明文档类型为HTML5 -->
+<html lang="en">
+<!-- 文档根元素，设置语言为英语 -->
+<head>
+    <!-- 文档头部，包含元数据和链接资源 -->
+    <meta charset="UTF-8">
+    <!-- 设置字符编码为UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 响应式视口设置，适配移动设备 -->
+    <title>Academic Homepage</title>
+    <!-- 网页标题 -->
+    <style>
+        /* CSS样式部分开始 */
+        
+        /* 基础页面样式 */
+        body {
+            font-family: 'Arial', sans-serif;  /* 字体设置 */
+            line-height: 1.6;  /* 行高 */
+            margin: 0;  /* 外边距清零 */
+            padding: 0;  /* 内边距清零 */
+            color: #333;  /* 文字颜色 */
+            max-width: 1000px;  /* 最大宽度 */
+            margin: 0 auto;  /* 水平居中 */
+            padding: 20px;  /* 内边距 */
+        }
+        
+        /* 头部区域样式 */
+        header {
+            display: flex;  /* 弹性布局 */
+            align-items: center;  /* 垂直居中 */
+            margin-bottom: 30px;  /* 底部外边距 */
+            flex-wrap: wrap;  /* 允许换行 */
+        }
+        
+        /* 个人头像样式 */
+        .profile-pic {
+            width: 150px;  /* 宽度 */
+            height: 150px;  /* 高度 */
+            border-radius: 50%;  /* 圆形头像 */
+            object-fit: cover;  /* 图片填充方式 */
+            margin-right: 30px;  /* 右边距 */
+            border: 3px solid #eee;  /* 边框 */
+        }
+        
+        /* 头部文字区域样式 */
+        .header-text {
+            flex: 1;  /* 弹性扩展 */
+            min-width: 250px;  /* 最小宽度 */
+        }
+        
+        /* 主标题样式 */
+        h1 {
+            margin: 0;  /* 外边距清零 */
+            color: #2c3e50;  /* 颜色 */
+        }
+        
+        /* 职位样式 */
+        .position {
+            font-style: italic;  /* 斜体 */
+            color: #7f8c8d;  /* 颜色 */
+            margin: 5px 0;  /* 外边距 */
+        }
+        
+        /* 所属机构样式 */
+        .affiliation {
+            margin: 5px 0 15px;  /* 外边距 */
+        }
+        
+        /* 联系信息样式 */
+        .contact-info {
+            margin-bottom: 5px;  /* 底部外边距 */
+        }
+        
+        /* 各部分内容区域样式 */
+        section {
+            margin-bottom: 30px;  /* 底部外边距 */
+        }
+        
+        /* 二级标题样式 */
+        h2 {
+            border-bottom: 2px solid #eee;  /* 底部边框 */
+            padding-bottom: 5px;  /* 底部内边距 */
+            color: #2c3e50;  /* 颜色 */
+        }
+        
+        /* 出版物条目样式 */
+        .publication {
+            margin-bottom: 15px;  /* 底部外边距 */
+        }
+        
+        /* 出版物标题样式 */
+        .pub-title {
+            font-weight: bold;  /* 加粗 */
+        }
+        
+        /* 出版物作者样式 */
+        .pub-authors {
+            font-style: italic;  /* 斜体 */
+        }
+        
+        /* 出版物出处样式 */
+        .pub-venue {
+            color: #7f8c8d;  /* 颜色 */
+        }
+        
+        /* 链接样式 */
+        a {
+            color: #3498db;  /* 颜色 */
+            text-decoration: none;  /* 无下划线 */
+        }
+        
+        /* 链接悬停效果 */
+        a:hover {
+            text-decoration: underline;  /* 下划线 */
+        }
+        
+        /* 社交媒体链接容器样式 */
+        .social-links {
+            display: flex;  /* 弹性布局 */
+            gap: 15px;  /* 元素间距 */
+            margin-top: 10px;  /* 顶部外边距 */
+        }
+        
+        /* 社交媒体图标样式 */
+        .social-icon {
+            width: 24px;  /* 宽度 */
+            height: 24px;  /* 高度 */
+        }
+        
+        /* 页脚样式 */
+        footer {
+            text-align: center;  /* 文本居中 */
+            margin-top: 50px;  /* 顶部外边距 */
+            color: #7f8c8d;  /* 颜色 */
+            font-size: 0.9em;  /* 字体大小 */
+        }
+        
+        /* 移动设备响应式样式 */
+        @media (max-width: 600px) {
+            /* 小屏幕下头部布局改为垂直排列 */
+            header {
+                flex-direction: column;  /* 垂直方向 */
+                text-align: center;  /* 文本居中 */
+            }
+            
+            /* 小屏幕下头像调整 */
+            .profile-pic {
+                margin-right: 0;  /* 右边距清零 */
+                margin-bottom: 20px;  /* 底部外边距 */
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 页面主体内容开始 -->
+    <header>
+        <!-- 头像图片，需要替换为实际图片路径 -->
+        <img src="profile.jpg" alt="Profile Picture" class="profile-pic">
+        <div class="header-text">
+            <!-- 姓名 -->
+            <h1>Dr. Jane Doe</h1>
+            <!-- 职位 -->
+            <p class="position">Assistant Professor of Computer Science</p>
+            <!-- 所属机构 -->
+            <p class="affiliation">University of Science and Technology</p>
+            <!-- 联系信息 -->
+            <p class="contact-info">Email: jane.doe@university.edu</p>
+            <p class="contact-info">Office: Building 42, Room 314</p>
+            
+            <!-- 社交媒体链接 -->
+            <div class="social-links">
+                <!-- Google Scholar链接 -->
+                <a href="https://scholar.google.com/citations?user=PROFILE_ID" target="_blank" title="Google Scholar">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Google_Scholar_logo.svg/1024px-Google_Scholar_logo.svg.png" alt="Google Scholar" class="social-icon">
+                </a>
+                <!-- ORCID链接 -->
+                <a href="https://orcid.org/YOUR-ORCID" target="_blank" title="ORCID">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/ORCID_iD.svg/1200px-ORCID_iD.svg.png" alt="ORCID" class="social-icon">
+                </a>
+                <!-- GitHub链接 -->
+                <a href="https://github.com/username" target="_blank" title="GitHub">
+                    <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub" class="social-icon">
+                </a>
+                <!-- LinkedIn链接 -->
+                <a href="https://linkedin.com/in/username" target="_blank" title="LinkedIn">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/800px-LinkedIn_logo_initials.png" alt="LinkedIn" class="social-icon">
+                </a>
+            </div>
+        </div>
+    </header>
+    
+    <!-- 个人简介部分 -->
+    <section id="about">
+        <h2>About</h2>
+        <p>Welcome to my academic homepage! I am an Assistant Professor in the Department of Computer Science at the University of Science and Technology. My research interests include artificial intelligence, machine learning, and natural language processing. I am particularly interested in developing novel algorithms for text understanding and generation.</p>
+    </section>
+    
+    <!-- 出版物部分 -->
+    <section id="publications">
+        <h2>Selected Publications</h2>
+        
+        <!-- 出版物条目1 -->
+        <div class="publication">
+            <p class="pub-title">A Novel Approach to Neural Machine Translation</p>
+            <p class="pub-authors">Jane Doe, John Smith, Alice Johnson</p>
+            <p class="pub-venue">Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing (EMNLP 2023)</p>
+            <p><a href="#">[PDF]</a> | <a href="#">[Code]</a> | <a href="#">[BibTeX]</a></p>
+        </div>
+        
+        <!-- 出版物条目2 -->
+        <div class="publication">
+            <p class="pub-title">Understanding Attention Mechanisms in Transformers</p>
+            <p class="pub-authors">Jane Doe, Robert Brown</p>
+            <p class="pub-venue">Journal of Artificial Intelligence Research, 2022</p>
+            <p><a href="#">[PDF]</a> | <a href="#">[Code]</a> | <a href="#">[BibTeX]</a></p>
+        </div>
+        
+        <!-- 出版物条目3 -->
+        <div class="publication">
+            <p class="pub-title">Efficient Training Methods for Large Language Models</p>
+            <p class="pub-authors">Jane Doe, Michael Green, Sarah White</p>
+            <p class="pub-venue">International Conference on Learning Representations (ICLR 2021)</p>
+            <p><a href="#">[PDF]</a> | <a href="#">[Code]</a> | <a href="#">[BibTeX]</a></p>
+        </div>
+        
+        <!-- 查看所有出版物的链接 -->
+        <p><a href="https://scholar.google.com/citations?user=PROFILE_ID" target="_blank">View all publications on Google Scholar →</a></p>
+    </section>
+    
+    <!-- 教学部分 -->
+    <section id="teaching">
+        <h2>Teaching</h2>
+        <ul>
+            <li>CS 101: Introduction to Artificial Intelligence (Fall 2023)</li>
+            <li>CS 301: Advanced Machine Learning (Spring 2023)</li>
+            <li>CS 501: Seminar in Natural Language Processing (Fall 2022)</li>
+        </ul>
+    </section>
+    
+    <!-- 指导学生部分 -->
+    <section id="students">
+        <h2>Students</h2>
+        <p>I am always looking for motivated students to join my research group. If you're interested in working with me, please send me an email with your CV and a brief description of your research interests.</p>
+        
+        <h3>Current PhD Students</h3>
+        <ul>
+            <li>Alex Chen - Neural Machine Translation</li>
+            <li>Maria Garcia - Interpretability of Language Models</li>
+        </ul>
+    </section>
+    
+    <!-- 页脚部分 -->
+    <footer>
+        <p>© 2023 Jane Doe. Last updated: June 2023.</p>
+    </footer>
+</body>
+</html>
